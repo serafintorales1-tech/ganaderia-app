@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tema: verde oscuro (ciclo completo) + tokens shadcn/ui */
+:root {
+  --background: 40 20% 98%;
+  --foreground: 158 32% 12%;
+  --card: 0 0% 100%;
+  --card-foreground: 158 32% 12%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 158 32% 12%;
+  --muted: 150 14% 94%;
+  --muted-foreground: 158 12% 38%;
+  /* Verde oscuro principal */
+  --primary: 158 48% 20%;
+  --primary-foreground: 40 20% 98%;
+  --secondary: 154 28% 90%;
+  --secondary-foreground: 158 40% 18%;
+  --accent: 152 38% 92%;
+  --accent-foreground: 158 52% 16%;
+  --destructive: 0 72% 42%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 150 14% 88%;
+  --input: 150 14% 88%;
+  --ring: 158 48% 28%;
+  --radius: 0.625rem;
+}
+
+.dark {
+  --background: 158 32% 6%;
+  --foreground: 40 14% 96%;
+  --card: 158 28% 9%;
+  --card-foreground: 40 14% 96%;
+  --popover: 158 28% 9%;
+  --popover-foreground: 40 14% 96%;
+  --muted: 154 22% 14%;
+  --muted-foreground: 146 14% 68%;
+  --primary: 152 43% 44%;
+  --primary-foreground: 158 40% 10%;
+  --secondary: 154 22% 16%;
+  --secondary-foreground: 40 14% 96%;
+  --accent: 154 26% 16%;
+  --accent-foreground: 40 14% 96%;
+  --destructive: 0 62% 48%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 154 22% 16%;
+  --input: 154 22% 16%;
+  --ring: 152 43% 40%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+}
